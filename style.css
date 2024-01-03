@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #001F3F; /* Navy Blue */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #DDDDDD; /* Light Gray */
+    color: #001F3F; /* Navy Blue */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    li {
+        float: none;
+    }
+
+    a {
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #007bff; /* Accent color for headers, maintaining a consistent style */
+    margin-bottom: 10px;
+}
+
+/* Add styles for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #FFD700; /* Gold */
+    color: white;
+    cursor: pointer;
+}
+
+/* Add styles for image slides */
+.image-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-slider img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Update styles for profile cards */
+/* Update styles for profile cards */
+/* .profiles {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center; 
+    flex-wrap: nowrap; 
+} */
+
+.profile-card {
+   /* Do not allow flex items to shrink or grow */
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.our-team{
+    display: flex;
+    flex-direction: row; /* Set the flex direction to row */
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center; /* Align items vertically in the center */
+    flex-wrap: nowrap;
+}
+
